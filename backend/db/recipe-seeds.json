@@ -1,0 +1,26 @@
+[
+    {
+        "title":"Authentic Southern Greens",
+        "cooktime":20,
+        "vegetarian" :false ,
+        "vegan" :false ,
+        "ingredients" : ["1/4 cup bacon drippings", "4 bunches of collard greens, stems removed","salt","3 cups of water"],
+        "instructions" : ["Heat bacon drippings in a cast-iron skillet over medium heat", "Add the greens. Stir-fry, for 1 to 4 minutes or until greens are limp, tender, and have greatly reduced in size", "Either serve them straight from the pan with a sprinkling of salt", "or add 3 to 4 cups of water and salt to taste, and boil the greens 1 hour for extra tender"]
+},
+{
+    "title": "Peach Cobbler",
+    "cooktime":40 ,
+    "vegetarian":true ,
+    "vegan":false ,
+    "ingredients": ["8 fresh peches, sliced into thin wedges", "1/4 cup white sugar", "1/4 cup brown sugar","1/4 teaspoon ground nutmeg","1 teaspoon lemon juice","2 teaspoons cornstarch", "1 cup all-purpose flour","1 teaspoon ground cinnamon", "1/2 cup white sugar","1/4 cup brown sugar","1 teaspoon baking powder","1/2 teaspoon salt", "6 tablespoons unsalted butter, chilledand sliced", "1/4 cup boiling water"],
+    "instructions": ["mix 3 tablespoons white sugar and 1 teaspoon ground cinnamon","Preheat oven to 425 degrees F", "In a large bowl, combine peaches, 1/4 cup white sugar, 1/4 cup brown sugar, 1/4 teaspoon cinnamon, nutmeg, lemon juice, and cornstarch.","Toss to coat evenly, and pour into a 2 quart baking dish. Bake in preheated oven for 10 minutes.","In a large bowl, combine flour, 1/4 cup white sugar, 1/4 cup brown sugar, baking powder, and salt. Blend in butter with your fingertips, or a pastry blender, until mixture resembles coarse meal. Stir in water until just combined","Remove peaches from oven, and drop spoonfuls of topping over them. Sprinkle entire cobbler with the sugar and cinnamon mixture","Bake until topping is golden, about 30 minutes."]
+},
+{
+    "title": "Hibiscus mint tea",
+    "cooktime":15 ,
+    "vegetarian":true ,
+    "vegan":true ,
+    "ingredients": ["3.5 cups of water", "1/2 cup fresh mint leaves","18 dried hibiscus petals","1 teaspoon lemon juice"],
+    "instructions": ["Fill a stovetop kettle with water and bring to a boil", "Remove from heat; add mint leaves, hibiscus petals, and lemon juice", "Stir once or twice and cover", "Steep for 3 to 5 minutes before serving either hot or iced"]
+}
+]
