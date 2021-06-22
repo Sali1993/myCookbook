@@ -2,8 +2,10 @@ const express = require("express")
 const cookbookController= require("./controllers/cookbook")
 
 const app = express()
-app.set("view engine", "hbs")
 app.use(express.json())
+app.set("view engine", "hbs")
+app.set("views", `${__dirname}/views`)
+app.use(express.static(`${__dirname}/public`))
 app.set("port", process.env.PORT || 1200 )
 
 app.use(cookbookController)

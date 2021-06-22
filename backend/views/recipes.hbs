@@ -1,0 +1,17 @@
+<div>
+<header>
+    <h1>Recipes</h1>
+    <a href="/recipes/new" class="btn btn-primary">Add New Recipe</a>
+</header>
+<ul class = "list-group">
+    {{#each recipes}}
+    <li>
+        <div>{{this.title}}</div>
+        <div>
+            <a href="/recipes/{{this.id}}" class="btn btn-info">View</a>
+        </div>
+    </li>
+    {{/each}}
+</ul>
+
+</div>
