@@ -1,8 +1,11 @@
 <div>
+ <a href="/recipes" class="btn btn-secondary">Back to Browse</a>   
 <h1>{{this.title}}</h1>
 <h2>{{this.cooktime}} mins</h2>
 <a href="/recipes/{{this.id}}/edit" class="btn btn-secondary"> Edit</a>
-<a href="/recipes/delete" class="btn btn-secondary"> Delete</a>
+<form action="/recipes/{{this.id}}?_method=DELETE" method="POST">
+<input type="submit"  value="Delete"  class="btn btn-danger">
+</form>
 {{#if vegan}}
 <p>Vegan!</p>
 {{else}}

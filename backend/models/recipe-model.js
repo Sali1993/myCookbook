@@ -6,8 +6,8 @@ const recipeSchema = new mongoose.Schema(
         cooktime:Number,
         vegetarian :Boolean,
         vegan :Boolean,
-        ingredients :[],
-        instructions : []       
+        ingredients:[],
+        instructions: []       
     }
 )
 
