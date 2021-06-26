@@ -1,0 +1,15 @@
+GET http://localhost:1200/users
+###
+
+
+
+POST http://localhost:1200/users
+
+Content-Type: application/json
+
+{
+
+    "name": "salah",
+    "password":"password"
+
+}

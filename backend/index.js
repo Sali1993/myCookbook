@@ -1,6 +1,7 @@
 const express = require("express")
 const cookbookController= require("./controllers/cookbook")
 const methodOverride = require("method-override")
+const bcrypt = require("bcrypt")
 
 const app = express()
 app.use(express.json())
