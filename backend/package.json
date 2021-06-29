@@ -2,7 +2,7 @@
   "name": "myCookbook",
   "version": "1.0.0",
   "description": "",
-  "main": "backend/index.js",
+  "main": "index.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
@@ -19,7 +19,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": " node index.js",
+    "start": " node backend/index.js",
     "devStart": "nodemon index.js"
   },
   "keywords": [],
