@@ -1,15 +1,15 @@
-<div>
-<header>
-    <h1>Recipes</h1>
-    <a href="/recipes/new" class="btn btn-primary">Add New Recipe</a>
-    <a href="/" class="btn btn-primary">Home</a>
+<div class="page">
+<header class="d-flex justify-content-between align-items-center">
+    <h1 class="title-text">Recipes</h1>
+    <a href="/landing" class="btn btn-primary button-text-main">Home</a>
 </header>
+<a href="/recipes/new" class="btn btn-primary button-text">Add New Recipe</a>
 <ul class = "list-group">
     {{#each recipes}}
-    <li>
-        <div>{{this.title}}</div>
+    <li class="list-group-item d-flex justify-content-between">
+        <div class="sub-title-text">{{this.title}}</div>
         <div>
-            <a href="/recipes/{{this.id}}" class="btn btn-info">View</a>
+            <a href="/recipes/{{this.id}}" class="btn btn-info button-text">View</a>
         </div>
     </li>
     {{/each}}

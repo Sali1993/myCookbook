@@ -5,6 +5,7 @@ const app = express()
 const dotenv = require("dotenv")
 dotenv.config()
 const passport = require("passport")
+const bodyParser = require("body-parser")
 const Auth0Strategy = require('passport-auth0')
 const strategy = new Auth0Strategy(
     {
@@ -34,7 +35,7 @@ const usersRouter = require('./controllers/users');
 
 if (app.get('env') === 'production') {
    sess.cookie.secure = true;
-    // app.set('trust proxy', 1);
+    app.set('trust proxy', 1);
 }
 
 
@@ -59,6 +60,7 @@ app.use((req, res, next) => {
     next()
 })
 // app.use('/', usersRouter)
+
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));

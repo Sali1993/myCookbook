@@ -1,24 +1,33 @@
-<div>
- <a href="/recipes" class="btn btn-secondary">Back to Browse</a>   
-<h1>{{this.title}}</h1>
-<h2>{{this.cooktime}} mins</h2>
-<a href="/recipes/{{this.id}}/edit" class="btn btn-secondary"> Edit</a>
+<div class="page" onload="displayIng()">
+ <a href="/recipes" class="btn btn-secondary button-text-main">Back to Browse</a> 
+<div class="recipe-form">
+<h1 class="title-text">{{this.title}}</h1>
+<h2 class="main-text">{{this.cooktime}} mins</h2>
+<div class="d-flex flex-direction-row">
+<a href="/recipes/{{this.id}}/edit" class="btn btn-secondary button-text-main"> Edit</a>
 <form action="/recipes/{{this.id}}?_method=DELETE" method="POST">
-<input type="submit"  value="Delete"  class="btn btn-danger">
+<input type="submit"  value="Delete"  class="btn btn-danger button-text">
+</div>
 </form>
 {{#if vegan}}
-<p>Vegan!</p>
+<p class="sub-title-text veg">Vegan</p>
 {{else}}
-<p>Non-Vegan</p>
+<p class="sub-title-text veg">Non-Vegan</p>
 {{/if}}
 {{#if vegetarian}}
-<p>Vegetarian</p>
+<p class="sub-title-text veg">Vegetarian</p>
 {{else}}
-<p>non-vegetarian</p>
+<p class="sub-title-text veg">non-vegetarian</p>
 {{/if}}
-<h3>Ingredients</h3>
-<p>{{this.ingredients}}</p>
-<h3>Instructions</h3>
-<p>{{this.instructions}}</p>
+<h3 class="sub-title-text">Ingredients</h3>
+<div id="ingredients">
+    <ul class="inglist"></ul>
+</div>
+<h3 class="sub-title-text">Instructions</h3>
+<div id="instructions">
+    <ul id="insList"></ul>
+</div>
+
+</div>
 
 </div>
