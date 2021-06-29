@@ -1,0 +1,28 @@
+{
+  "name": "myCookbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-openid-connect": "^2.4.0",
+    "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.13.0",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-auth0": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": " node index.js",
+    "devStart": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
