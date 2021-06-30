@@ -9,13 +9,19 @@ const bodyParser = require("body-parser")
 const Auth0Strategy = require('passport-auth0')
 const strategy = new Auth0Strategy(
     {
-        domain: process.env.domain,
-        clientID: process.env.clientID,
-        clientSecret: process.env.clientSecret,
-        
+        domain: process.env.AUTH0_DOMAIN,
+        clientID: process.env.AUTH0_CLIENT_ID,
+        clientSecret: process.env.AUTH0_CLIENT_SECRET,
+        callbackURL: process.env.AUTH0_CALLBACK_URL,
     },
     function (accessToken, refreshToken, extraParams, profile, done) {
-        return done(null, profile)
+        var info = {
+            "profile": profile,
+            "accessToken": accessToken,
+            "refreshToken": refreshToken,
+            "extraParams": extraParams
+        };
+        return done(null, info)
     }
 )
 const session = require("express-session")
